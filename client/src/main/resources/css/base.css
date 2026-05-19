@@ -1,0 +1,105 @@
+.button {
+    -fx-background-color: linear-gradient(#4CAF50, #45a049);
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-padding: 8 15 8 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#45a049, #3d8b40);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 8, 0, 0, 3);
+    -fx-cursor: hand;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(#3d8b40, #357a38);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 1);
+    -fx-translate-y: 1px;
+}
+
+.table-view {
+    -fx-vertical-scrollbar-policy: always;
+    -fx-font-size: 18px;
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-visible: true;
+}
+
+.table-view .column-header {
+    -fx-font-size: 18px;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-font-size: 18px;
+    -fx-padding: 8px;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f5f5f5;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected:odd {
+    -fx-background-color: #45a049;
+}
+
+.table-row-cell:selected:even {
+    -fx-background-color: #4CAF50;
+}
+
+.list-view {
+    -fx-font-size: 24px !important;
+}
+
+.list-view .list-cell {
+    -fx-font-size: 24px !important;
+    -fx-cell-size: 65px !important;
+    -fx-padding: 15px !important;
+    -fx-alignment: CENTER-LEFT !important;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.convex-label {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 14px;
+    -fx-text-fill: #5959ff;
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 2;
+    -fx-effect: dropshadow(gaussian, #ffffff, 2, 0.5, -2, -2),
+                dropshadow(gaussian, #404040, 2, 0.5, 2, 2);
+    -fx-background-effect: innershadow(gaussian, #909090, 1, 0.5, 0, 0);
+}

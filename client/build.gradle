@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.14'
+}
+
+dependencies {
+    implementation project(':server')
+    implementation project(':shared')
+
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.3'
+}
+
+javafx {
+    version = "21.0.11"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.swing']
+}
+
+application {
+    mainClass = 'com.nargiz.chess.client.Launcher'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.nargiz.chess.client.Launcher'
+        )
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

@@ -1,0 +1,15 @@
+dependencies {
+    implementation project(':shared')
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.3'
+
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.nargiz.chess.server.ServerLauncher'
+        )
+    }
+}

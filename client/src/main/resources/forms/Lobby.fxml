@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="572.0" spacing="3.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label fx:id="hostName" maxWidth="Infinity" prefHeight="60.0" text="Имя хоста" wrapText="true">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <HBox fx:id="memberCountPane" alignment="CENTER_LEFT" maxWidth="Infinity" prefHeight="40.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="180.0" text="Число игроков:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="memberCount" editable="true" prefHeight="35.0" prefWidth="85.0" style="-fx-font-size: 20px;" />
+               </children>
+            </HBox>
+            <Label maxWidth="Infinity" prefHeight="25.0" styleClass="convex-label" stylesheets="@../css/base.css" text="Игроки">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="membersList" maxWidth="Infinity" prefHeight="200.0" stylesheets="@../css/base.css" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER" maxWidth="Infinity" prefHeight="40.0" spacing="20.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchBack" prefHeight="35.0" prefWidth="200.0" stylesheets="@../css/base.css" text="Отмена" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="selectButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startGame" prefHeight="35.0" prefWidth="200.0" stylesheets="@../css/base.css" text="Играть" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

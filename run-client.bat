@@ -1,0 +1,3 @@
+@echo off
+echo Starting Chess Client...
+gradle :client:run

@@ -1,0 +1,93 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle build directories
+.gradle/
+build/
+*/build/
+**/build/
+
+# Gradle wrapper (optional - comment out if you want to include wrapper)
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Gradle specific files
+.gradletasknamecache
+
+# IntelliJ IDEA project files
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+bin/
+*.launch
+
+# NetBeans project files
+nbproject/
+nb-configuration.xml
+nbbuild/
+dist/
+nbdist/
+. nb-gradle/
+
+# Log files
+*.log
+logs/
+*/logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.lock
+
+# Application specific
+client/build/
+server/build/
+shared/build/
+client/bin/
+server/bin/
+shared/bin/
+
+# Gradle wrapper jar (if you want to exclude it)
+gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files
+local.properties
+gradle.properties.local
+*.local
+
+# Test reports
+test-output/
+test-results/
+*/test-output/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Package files (if you generate them)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# JVM crash logs
+hs_err_pid*.log

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" layoutX="23.0" layoutY="211.0" prefHeight="51.0" prefWidth="350.0" spacing="10.0" AnchorPane.bottomAnchor="25.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#switchBack" prefHeight="41.0" prefWidth="162.0" stylesheets="@../css/base.css" text="Отмена" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#createLobby" prefHeight="41.0" prefWidth="162.0" stylesheets="@../css/base.css" text="Создать" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <GridPane layoutX="62.0" layoutY="38.0" prefHeight="88.0" prefWidth="272.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="99.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="173.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="35.0" prefWidth="48.0" style="-fx-text-alignment: right;" text="Лобби:" textAlignment="RIGHT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lobbyName" prefHeight="25.0" prefWidth="148.0" GridPane.columnIndex="1" />
+            <Label prefHeight="35.0" prefWidth="48.0" style="-fx-text-alignment: right;" text="Имя:" textAlignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" prefHeight="25.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="35.0" prefWidth="103.0" style="-fx-text-alignment: right;" text="Число игроков:" textAlignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="memberCount" editable="true" prefHeight="25.0" prefWidth="109.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
