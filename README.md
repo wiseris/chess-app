@@ -5,7 +5,7 @@
 ## Модули
 
 - `server` — серверная часть
-- `shared` — общие классы, модели, команды, IoC, EventBus
+- `shared` — общие классы, модели, команды и др
 - `client` — клиент на JavaFX
 
 ---
@@ -43,7 +43,7 @@
 
 ## Event Bus
 
-`ApplicationEventBus` — подписка/публикация событий через `ConcurrentHashMap` и `Consumer`.
+`ApplicationEventBus` подписка/публикация событий через `ConcurrentHashMap` и `Consumer`.
 
 ---
 
@@ -62,6 +62,6 @@
 
 ### Фигуры
 
-`King`, `Queen`, `Rook`, `Bishop`, `Knight`, `Pawn` — каждая реализует свою логику хода, проверку препятствий и шаха.
+`King`, `Queen`, `Rook`, `Bishop`, `Knight`, `Pawn` каждая реализует свою логику хода, проверку препятствий и шаха.
 
 Особые ходы: рокировка, en passant, превращение пешки.
