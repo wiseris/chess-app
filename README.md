@@ -12,8 +12,6 @@
 
 ## Сетевое взаимодействие
 
-**Command-based протокол** поверх TCP, сериализация — JSON (Jackson).
-
 1. Клиент → `ChessCommand` (в `Envelope`) → Сервер
 2. Сервер десериализует через `ChessCommandFabric`
 3. Выполняется логика, возвращается ответ
@@ -30,24 +28,6 @@
 | `ActionCommand` | Ход фигурой |
 | `UpdateGameState` | Синхронизация состояния |
 | `UpdateMembers` | Обновление состава лобби |
-
----
-
-## IoC-контейнер (самописный)
-
-Аннотации: `@Component`, `@Inject`, `@PostConstruct`, `@Command`.
-
-Поддерживает: singleton, DI, post-construct, scan пакетов, маппинг интерфейсов.
-
----
-
-## Event Bus
-
-`ApplicationEventBus` подписка/публикация событий через `ConcurrentHashMap` и `Consumer`.
-
----
-
-## Игровая модель
 
 ### Основные сущности
 
