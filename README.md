@@ -4,7 +4,6 @@
 - `shared` — модели фигур, команды, события и другое
 - `client` — JavaFX-интерфейс, TCP-клиент для обмена ходами, UDP-клиент для поиска серверов
 ## Сетевое взаимодействие
-
 `client/network/impl/TCPClientImpl.java` — TCP-сокет, подключение к серверу, отправка и приём JSON
 
 `server/network/impl/TCPServerImpl.java` — ServerSocket, приём TCP-подключений, broadcast, отключения
